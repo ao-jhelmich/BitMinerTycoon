@@ -1,55 +1,28 @@
-<!-- index.html -->
-<!doctype html>
-<!-- ASSIGN OUR ANGULAR MODULE -->
+<!DOCTYPE html>
 <html ng-app="scotchTodo">
     <head>
-        <!-- META -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
-        <title>Node/Angular Todo App</title>
-        <!-- SCROLLS -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
-        <style>
-        html                    { overflow-y:scroll; }
-        body                    { padding-top:50px; }
-        #todo-list              { margin-bottom:30px; }
-        </style>
-        <!-- SPELLS -->
+        <title>BitMinerTycoon</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><!-- load bootstrap -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
         <script src="core.js"></script>
     </head>
-    <!-- SET THE CONTROLLER AND GET ALL TODOS -->
     <body ng-controller="mainController">
-        <div class="container">
-            <!-- HEADER AND TODO COUNT -->
-            <div class="jumbotron text-center">
-                <h1>I'm a Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
+        <div class="wrapper">
+            <div class="nav">
+                
             </div>
-            <!-- TODO LIST -->
-            <div id="todo-list" class="row">
-                <div class="col-sm-4 col-sm-offset-4">
-                    <!-- LOOP OVER THE TODOS IN $scope.todos -->
-                    <div class="checkbox" ng-repeat="todo in todos">
-                        <label>
-                            <input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
-                        </label>
-                    </div>
-                </div>
+            <div class="content">
+                
             </div>
-            <!-- FORM TO CREATE TODOS -->
-            <div id="todo-form" class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-                    <form>
-                        <div class="form-group">
-                            <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-                            <input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
-                        </div>
-                        <!-- createToDo() WILL CREATE NEW TODOS -->
-                        <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
-                    </form>
-                </div>
+            <div class="footer">
+
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
 </html>
