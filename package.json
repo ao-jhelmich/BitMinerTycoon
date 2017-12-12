@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name"         : "node-todo",
   "version"      : "0.0.0",
   "description"  : "Simple todo application.",
@@ -6,13 +7,22 @@
   "scripts"      :{
     "start" : "nodemon server.js",
     "test"  : "node testDbConnections.js"
+=======
+  "name": "node-todo",
+  "version": "0.0.0",
+  "description": "Simple todo application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node testDbConnections.js"
+>>>>>>> 71a1dffab0fdf287f3b67905e547c89a79b37c3a
   },
-  "author"       : "Scotch",
-  "dependencies" : {
-    "express"    : "~4.7.2",
-    "mongoose"   : "~3.6.2",
-    "morgan"     : "~1.2.2",
+  "author": "Scotch",
+  "dependencies": {
+    "express": "~4.7.2",
+    "mongoose": "~3.6.2",
+    "morgan": "~1.2.2",
     "body-parser": "~1.5.2",
     "method-override": "~2.1.2"
-    }
+  }
 }
